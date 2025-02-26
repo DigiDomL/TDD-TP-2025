@@ -29,6 +29,18 @@ public class IsbnValidatorTest {
     }
 
     @Test
+    public void whenMultipleIsbnIsValid_shouldReturnTrue() {
+    
+        IsbnValidator validator = new IsbnValidator();
+        String[] validIsbns = {"2253009687", "0471958697"};
+    
+        for (String isbn : validIsbns) {
+            boolean result = validator.validateIsbn(isbn);
+            assertTrue(result);
+        }
+    }
+
+    @Test
     public void whenIsbnIsTooShort_shouldReturnException() {
 
         IsbnValidator validator = new IsbnValidator();
