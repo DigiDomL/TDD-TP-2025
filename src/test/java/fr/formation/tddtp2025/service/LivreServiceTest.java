@@ -3,6 +3,9 @@ package fr.formation.tddtp2025.service;
 import static org.mockito.Mockito.*;
 import static org.junit.jupiter.api.Assertions.*;
 
+import fr.formation.tddtp2025.model.Format;
+import fr.formation.tddtp2025.model.Livre;
+import fr.formation.tddtp2025.repo.LivreRepository;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
