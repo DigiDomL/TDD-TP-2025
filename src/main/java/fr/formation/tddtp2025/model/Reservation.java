@@ -3,6 +3,7 @@ package fr.formation.tddtp2025.model;
 import java.time.LocalDate;
 
 public class Reservation {
+    private Long id;
     private Adherent adherent;
     private Livre livre;
     private LocalDate dateReservation;
