@@ -10,7 +10,7 @@ public class IsbnValidator {
     }
 
     public static boolean validateIsbn(String number) {
-        if (number == null || (!number.matches("\\d{10}") && !number.matches("\\d{13}"))) {
+        if (number == null || (number.length() != 10 && number.length() != 13)) {
             throw new IllegalArgumentException("L'ISBN doit contenir exactement 10 ou 13 chiffres.");
         }
 

@@ -16,8 +16,23 @@ public class Livre {
         this.format = format;
     }
 
-    // Getters et setters nécessaires pour le test
     public String getIsbn() {
         return isbn;
+    }
+
+    public String getTitre() {
+        return titre;
+    }
+
+    public String getAuteur() {
+        return auteur;
+    }
+
+    public String getEditeur() {
+        return editeur;
+    }
+
+    public Format getFormat() {
+        return format;
     }
 }
