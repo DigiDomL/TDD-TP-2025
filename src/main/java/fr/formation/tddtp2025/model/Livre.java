@@ -1,7 +1,6 @@
 package fr.formation.tddtp2025.model;
 
 public class Livre {
-
     private String isbn;
     private String titre;
     private String auteur;
